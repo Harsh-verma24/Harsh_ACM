@@ -4,29 +4,69 @@
   box-sizing: border-box;
 }
 
-#heheBoi_1080{
-color: white;
-gap: 3;
-background-color: rgb(243, 243, 243);
-flex-direction: column;
+
+#harsh_div{
+  height: 150px;
+  width: 200px;
+  background-color: #b66363;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+
 }
 
-#heheBoi_1080_button{
-background: rgb(255,255,255);
-background: linear-gradient(5deg, rgba(255,255,255,0) 0%, rgba(0,212,255,0.4646650896686799) 46%, rgba(0,255,245,1) 92%);
-height: 50%;
-width: 75%;
-border: none;
-border-radius: 15px ;
-transition: all;
-transition: 0.5s;
+#harsh_div #harsh_btn{
+  height: 60px;
+  width: 100px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 2px 2px 2px #1a19194c;
+  cursor: pointer;
+  transition: ease-in 0.5s;
+  position: relative;
+  
+
 }
 
-#heheBoi_1080_button:hover{
-background: rgb(255,255,255);
-background: linear-gradient(5deg, rgba(255,255,255,0) 0%, rgba(0,255,245,1) 41%, rgba(0,212,255,0.4646650896686799) 100%);
+#harsh_div #harsh_btn:hover{
+  background-color: #ff0000;
+  color: #fff;
+  
+ 
+  
+}
 
-color: white;
+#harsh_div #harsh_btn p{
+  animation: slider;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+#harsh_div #harsh_btn p:hover{
+  animation: bor 30s infinite;
+
+}
+
+
+@keyframes slider {
+
+  from{
+      width: 50%;
+
+  }
+  to{
+      width: 100%;
+  }
+}
+
+@keyframes bor {
+  from{
+      border-radius: 0;
+  }
+  to{
+      border-radius: 50%;
+  }
 }
 
 
